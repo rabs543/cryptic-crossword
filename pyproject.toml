@@ -1,0 +1,15 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+version = "0.0.1"
+name = "crosswords"
+dependencies = [
+    "mysql-connector-python>=9.1.0",
+    "beautifulsoup4",
+    "requests",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/crosswords"]
